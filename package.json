@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:host": "ng s host-app",
+    "start:products": "ng s products-app --port=4201",
+    "start:orders": "ng s orders-app --port=4202",
+    "start:carts": "ng s carts-app --port=4203"
   },
   "private": true,
   "dependencies": {
