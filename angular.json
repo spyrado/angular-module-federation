@@ -20,9 +20,7 @@
             "outputPath": "dist/host-app",
             "index": "projects/host-app/src/index.html",
             "main": "projects/host-app/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/host-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -30,9 +28,12 @@
               "projects/host-app/src/assets"
             ],
             "styles": [
-              "projects/host-app/src/styles.scss"
+              "projects/host-app/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -82,19 +83,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/host-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/host-app/src/favicon.ico",
               "projects/host-app/src/assets"
             ],
-            "styles": [
-              "projects/host-app/src/styles.scss"
-            ],
+            "styles": ["projects/host-app/src/styles.scss"],
             "scripts": []
           }
         }
@@ -117,18 +113,14 @@
             "outputPath": "dist/products-app",
             "index": "projects/products-app/src/index.html",
             "main": "projects/products-app/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/products-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/products-app/src/favicon.ico",
               "projects/products-app/src/assets"
             ],
-            "styles": [
-              "projects/products-app/src/styles.scss"
-            ],
+            "styles": ["projects/products-app/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -179,19 +171,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/products-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/products-app/src/favicon.ico",
               "projects/products-app/src/assets"
             ],
-            "styles": [
-              "projects/products-app/src/styles.scss"
-            ],
+            "styles": ["projects/products-app/src/styles.scss"],
             "scripts": []
           }
         }
@@ -214,18 +201,14 @@
             "outputPath": "dist/carts-app",
             "index": "projects/carts-app/src/index.html",
             "main": "projects/carts-app/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/carts-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/carts-app/src/favicon.ico",
               "projects/carts-app/src/assets"
             ],
-            "styles": [
-              "projects/carts-app/src/styles.scss"
-            ],
+            "styles": ["projects/carts-app/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -276,19 +259,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/carts-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/carts-app/src/favicon.ico",
               "projects/carts-app/src/assets"
             ],
-            "styles": [
-              "projects/carts-app/src/styles.scss"
-            ],
+            "styles": ["projects/carts-app/src/styles.scss"],
             "scripts": []
           }
         }
@@ -311,18 +289,14 @@
             "outputPath": "dist/orders-app",
             "index": "projects/orders-app/src/index.html",
             "main": "projects/orders-app/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/orders-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/orders-app/src/favicon.ico",
               "projects/orders-app/src/assets"
             ],
-            "styles": [
-              "projects/orders-app/src/styles.scss"
-            ],
+            "styles": ["projects/orders-app/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -373,19 +347,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/orders-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/orders-app/src/favicon.ico",
               "projects/orders-app/src/assets"
             ],
-            "styles": [
-              "projects/orders-app/src/styles.scss"
-            ],
+            "styles": ["projects/orders-app/src/styles.scss"],
             "scripts": []
           }
         }
