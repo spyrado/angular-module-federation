@@ -7,15 +7,16 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "start:host": "ng s host-app",
-    "start:products": "ng s products-app --port=4201",
-    "start:orders": "ng s orders-app --port=4202",
-    "start:carts": "ng s carts-app --port=4203",
+    "start:host": "ng s host-app --port=5000",
+    "start:products": "ng s products-app --port=4000",
+    "start:orders": "ng s orders-app --port=3000",
+    "start:carts": "ng s carts-app --port=2000",
+    "start:all": "concurrently --kill-others \"npm run start:host\" \"npm run start:products\" \"npm run start:orders\" \"npm run start:carts\"",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
-    "@angular-architects/module-federation": "^17.0.1",
+    "@angular-architects/module-federation": "^16.0.4",
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",
     "@angular/compiler": "^16.1.0",
@@ -34,13 +35,14 @@
     "@angular/cli": "~16.1.1",
     "@angular/compiler-cli": "^16.1.0",
     "@types/jasmine": "~4.3.0",
+    "concurrently": "^8.2.2",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "ngx-build-plus": "^17.0.0",
+    "ngx-build-plus": "^16.0.0",
     "typescript": "~5.1.3"
   }
 }
