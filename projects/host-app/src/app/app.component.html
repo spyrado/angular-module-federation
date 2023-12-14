@@ -1,19 +1,4 @@
-<section class="container">
-  <h1>Host App</h1>
-  <button type="button" class="btn btn-primary me-3" [routerLink]="['/']">
-    home
-  </button>
-  <button
-    type="button"
-    class="btn btn-primary me-3"
-    [routerLink]="['/products']"
-  >
-    products MFE
-  </button>
-  <button type="button" class="btn btn-primary me-3" [routerLink]="['/balula']">
-    orders MFE
-  </button>
-  <main class="my-4">
-    <router-outlet></router-outlet>
-  </main>
-</section>
+<app-header></app-header>
+<main class="m-4">
+  <router-outlet></router-outlet>
+</main>
